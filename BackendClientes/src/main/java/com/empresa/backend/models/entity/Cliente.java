@@ -17,7 +17,7 @@ import javax.persistence.TemporalType;
 public class Cliente implements Serializable{
 	
 	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)    // Se utuliza para generar claves primarias de manera automatica en la entidad de la base de datos
 	private long id;
 	private static final long serialVersionUID = 1L;
 	private String nombre;
