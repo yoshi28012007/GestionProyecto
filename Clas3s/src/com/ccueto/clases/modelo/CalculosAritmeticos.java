@@ -16,3 +16,15 @@ public class CalculosAritmeticos {
 		
 	}
 }
+
+public class Calculosgeometricos {
+
+	
+	public int areacuadrado(int ancho, int alto) {
+		
+		return (ancho+alto) * n2;
+	}
+
+	
+	
+}
