@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>APIREST_Cliente</title>
+</head>
+<body>
+	<br/>
+	<div th:if="${cliente != null and !cliente.empty}">
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Email</th>
+				<th>Creado en</th>
+			</tr>
+			
+			<tr th:each="cliente: ${cliente}">
+				<td h:text="${cliente.nombre}">Mostrar nombre</td>
+				<td h:text="${cliente.apellido}">Mostrar apellido</td>
+				<td h:text="${cliente.email}">Mostrar email</td>
+				<td h:text="${cliente.createAt}">Mostrar creado</td>
+			</tr>
+		
+		</table>
+	<div th:if="${cliente == null and cliente.empty}">
+		<p>La lista de clientes está vacía</p>
+	<div>
+	</div>
+</body>
+</html>
